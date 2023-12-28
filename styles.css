@@ -91,6 +91,8 @@ nav {
     white-space: nowrap;
 }
 
+
+
 .navbar__links:hover {
     color: #f77062;
     transition: all 0.3s ease;
@@ -193,9 +195,10 @@ nav {
 main {
     background: var(--black);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-flow: row wrap;
     padding: 5% 0;
+    height:85vh;
 }
 
 .services__card {
@@ -332,4 +335,6 @@ main {
 footer {
     background-color: var(--black);
     color: var(--white);
+    margin-bottom: 0px;
+    margin-top:auto;
 }
