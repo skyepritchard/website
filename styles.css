@@ -1,16 +1,82 @@
-:root{
+:root {
     --black: #141414;
     --white: #fff;
-    --gradient: linear-gradient(
-        to bottom,
-        rgba(0,0,0,0) 0%,
-        rgba(17, 17, 17, 0.6) 100%);
+    --gradient: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(17, 17, 17, 0.6) 100%);
 }
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Fluid font size variables, for browsers that support clamp */
+@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --font-size-sm: clamp(0.83rem, 0.17vw + 0.79rem, 0.93rem);
+        --font-size-base: clamp(1rem, 0.45vw + 0.89rem, 1.25rem);
+        --font-size-md: clamp(1.2rem, 0.89vw + 0.98rem, 1.69rem);
+        --font-size-lg: clamp(1.44rem, 1.52vw + 1.06rem, 2.28rem);
+        --font-size-xl: clamp(1.73rem, 2.45vw + 1.12rem, 3.08rem);
+        --font-size-xxl: clamp(2.07rem, 3.78vw + 1.13rem, 4.15rem);
+        --font-size-xxxl: clamp(2.49rem, 5.67vw + 1.07rem, 5.61rem);
+    }
+}
+
+/* Fallback variables for browsers that don't support clamp */
+@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+    :root {
+        --font-size-sm: 0.83rem;
+        --font-size-base: 1rem;
+        --font-size-md: 1.2rem;
+        --font-size-lg: 1.44rem;
+        --font-size-xl: 1.73rem;
+        --font-size-xxl: 2.07rem;
+        --font-size-xxxl: 2.49rem;
+    }
+
+    @media screen and (min-width: 1280px) {
+        :root {
+            --font-size-sm: 0.93rem;
+            --font-size-base: 1.25rem;
+            --font-size-md: 1.69rem;
+            --font-size-lg: 2.28rem;
+            --font-size-xl: 3.08rem;
+            --font-size-xxl: 4.15rem;
+            --font-size-xxxl: 5.61rem;
+        }
+
+    }
+}
+
+h1 {
+    font-size: var(--font-size-xxl);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+h3 {
+    font-size: var(--font-size-lg);
+}
+
+h4 {
+    font-size: var(--font-size-md);
+}
+
+h5 {
+    font-size: var(--font-size-md);
+    font-weight: bold;
+}
+
+p,
+a,
+li {
+    font-size: var(--font-size-base);
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~NAVBAR~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -23,7 +89,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
     top: 0;
     z-index: 999;
 }
@@ -52,12 +117,13 @@ nav {
     display: flex;
     cursor: pointer;
     text-decoration: none;
-    font-size: 4rem;
-    color: var(--white);;
+    color: var(--white);
+    ;
 }
 
 .navbar__title {
-    color: var(--white);;
+    color: var(--white);
+    ;
 }
 
 .game__navbar .navbar__title {
@@ -65,7 +131,7 @@ nav {
 }
 
 
-.navbar__menu{
+.navbar__menu {
     display: flex;
     align-items: center;
     list-style: none;
@@ -81,7 +147,8 @@ nav {
 }
 
 .navbar__links {
-    color: var(--white);;
+    color: var(--white);
+    ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,7 +165,7 @@ nav {
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -109,7 +176,7 @@ nav {
         padding: 0;
     }
 
-    .navbar__menu{
+    .navbar__menu {
         display: grid;
         grid-template-columns: auto;
         margin: 0;
@@ -130,15 +197,10 @@ nav {
         transition: all 0.5s ease;
         z-index: 99;
         height: 50vh;
-        font-size: 1.6rem;
     }
 
     .navbar__title {
         padding-left: 25px;
-    }
-
-    #navbar__logo {
-        font-size: 2rem;
     }
 
     .navbar__item {
@@ -164,7 +226,7 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        width:80%;
+        width: 80%;
         height: 80px;
         margin: 0;
     }
@@ -174,20 +236,21 @@ nav {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
-        background: var(--white);;
+        background: var(--white);
+        ;
         display: block;
         cursor: pointer;
     }
 
-    #mobile-menu.is-active .bar:nth-child(2){
+    #mobile-menu.is-active .bar:nth-child(2) {
         opacity: 0;
     }
 
-    #mobile-menu.is-active .bar:nth-child(1){
+    #mobile-menu.is-active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
 
-    #mobile-menu.is-active .bar:nth-child(3){
+    #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
 }
@@ -198,7 +261,7 @@ main {
     justify-content: space-around;
     flex-flow: row wrap;
     padding: 5% 0;
-    height:85vh;
+    height: 85vh;
 }
 
 .services__card {
@@ -207,28 +270,30 @@ main {
     width: 300px;
     border-radius: 4px;
     background-size: cover;
-    color: var(--white);;
+    color: var(--white);
+    ;
     display: flex;
     flex-direction: column;
     justify-content: end;
     text-decoration: none;
 }
 
-.services__card h2, p{
-    margin-left:10px;
+.services__card h2,
+p {
+    margin-left: 10px;
 }
 
-#demigod_daycare{
+#demigod_daycare {
     background-image: var(--gradient),
-    url('/images/demigod_icon_01.png');
+        url('/images/demigod_icon_01.png');
 }
 
-#lil_robo{
+#lil_robo {
     background-image: var(--gradient),
         url('/images/robo_icon_01.png');
 }
 
-#bird_breakfast{
+#bird_breakfast {
     background-image: var(--gradient),
         url('/images/bird_icon_01.png');
 }
@@ -254,7 +319,8 @@ main {
 }
 
 .services__card button {
-    color: var(--white);;
+    color: var(--white);
+    ;
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -271,7 +337,8 @@ main {
     cursor: pointer;
 }
 
-.project { /* .project is just the top section of the page */
+.project {
+    /* .project is just the top section of the page */
     background: var(--black);
     display: flex;
     flex-direction: column;
@@ -280,20 +347,22 @@ main {
 
 
 .project__overview--title {
-    color: var(--white);;
+    color: var(--white);
+    ;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
 }
 
-.project__overview--title p{
+.project__overview--title p {
     margin: 16px;
     color: #e4d3b2;
     outline-style: double;
 }
 
 .project__overview--stats {
-    color: var(--white);;
+    color: var(--white);
+    ;
     padding-bottom: 1rem;
 }
 
@@ -305,21 +374,21 @@ main {
     /*height: 100px; why did i specify height??*/
 }
 
-.project__content--container{
+.project__content--container {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.project__descriptions{
+.project__descriptions {
     max-width: 900px;
-    outline-color:#f77062;
+    outline-color: #f77062;
     outline-style: solid;
     max-width: 600px;
 }
 
 .project__images {
-    outline-color:#f77062;
+    outline-color: #f77062;
     outline-style: solid;
     max-width: 600px;
 }
@@ -336,5 +405,5 @@ footer {
     background-color: var(--black);
     color: var(--white);
     margin-bottom: 0px;
-    margin-top:auto;
+    margin-top: auto;
 }
