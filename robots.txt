@@ -1,0 +1,44 @@
+# hides unnecessary files from all search engines (except internet archive)
+User-agent: *
+Disallow: /fonts/
+Disallow: /images/
+Disallow /media/
+
+User-agent: ia_archiver
+Allow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: AdsBot-Google
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-Agent: FacebookBot
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: /
+
+User-agent: msnbot-media
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
