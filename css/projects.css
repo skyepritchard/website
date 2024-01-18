@@ -1,0 +1,47 @@
+.flex{
+    display: flex;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    flex-direction: row;
+}
+
+main h1 {
+    padding: 5% 0;
+    text-align: center;
+}
+
+main figure {
+    padding: 10% 0;
+}
+
+main img{
+    width: 10vw;
+}
+
+iframe{
+    width: 40vw;
+    margin: 0 18%;
+}
+main section{
+    flex-direction: column;
+    width: 100vw;
+}
+
+main span {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+span div{
+    padding: 5%;
+    max-width: 33vw;
+}
+
+footer{
+    position: relative;
+    margin-bottom: 0;
+    margin-top:auto;
+}
