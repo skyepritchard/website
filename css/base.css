@@ -249,11 +249,7 @@ h3 {
     font-size: var(--font-size-lg);
 }
 
-h4 {
-    font-size: var(--font-size-md);
-}
-
-h5 {
+h4, h5 {
     font-size: var(--font-size-md);
     font-weight: bold;
 }
