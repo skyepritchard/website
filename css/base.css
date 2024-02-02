@@ -12,6 +12,11 @@ nav {
     z-index: 999;
 }
 
+main{
+    width: 100vw;
+    height: 101vh;
+}
+
 .game__navbar {
     align-items: baseline;
 }
