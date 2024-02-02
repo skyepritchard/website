@@ -9,13 +9,12 @@ main {
 }
 
 .services__card {
-    margin: 2rem;
+    margin: 1rem;
     height: 20rem;
     width: 20rem;
     border-radius: 4px;
     background-size: cover;
     color: var(--white);
-    ;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -65,7 +64,6 @@ main {
 
 .services__card button {
     color: var(--white);
-    ;
     padding: 10px 20px;
     border: none;
     outline: none;
@@ -93,7 +91,6 @@ main {
 
 .project__overview--title {
     color: var(--white);
-    ;
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
@@ -107,7 +104,6 @@ main {
 
 .project__overview--stats {
     color: var(--white);
-    ;
     padding-bottom: 1rem;
 }
 
