@@ -1,40 +1,43 @@
-.flex{
+.flex {
     display: flex;
 }
 
-main{
+main {
     flex-direction: row;
     height: 115vh;
-}
 
-main h1 {
+
+h1 {
     padding: 5vh 0;
     text-align: center;
 }
 
-main figure {
+figure {
     padding: 10vw 0;
 }
 
-main img{
+img {
     width: 10vw;
 }
 
-iframe{
+iframe {
     width: 40vw;
     margin: 0 12vw;
 }
-main section{
+
+section {
     flex-direction: column;
     width: 100vw;
 }
 
-main span {
+span {
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-span div{
+div {
     padding: 5%;
     max-width: 33vw;
+}
+
 }
