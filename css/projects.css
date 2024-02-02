@@ -5,39 +5,37 @@
 main {
     flex-direction: row;
     height: 115vh;
+    h1 {
+        padding: 5vh 0;
+        text-align: center;
+    }
 
+    figure {
+        padding: 10vw 0;
+    }
 
-h1 {
-    padding: 5vh 0;
-    text-align: center;
-}
+    img {
+        width: 10vw;
+    }
 
-figure {
-    padding: 10vw 0;
-}
+    iframe {
+        width: 40vw;
+        margin: 0 12vw;
+    }
 
-img {
-    width: 10vw;
-}
+    section {
+        flex-direction: column;
+        width: 100vw;
+    }
 
-iframe {
-    width: 40vw;
-    margin: 0 12vw;
-}
+    span {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
-section {
-    flex-direction: column;
-    width: 100vw;
-}
-
-span {
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-div {
-    padding: 5%;
-    max-width: 33vw;
-}
+    span div {
+        padding: 5%;
+        max-width: 33vw;
+    }
 
 }
