@@ -4,7 +4,6 @@
 
 main {
     flex-direction: row;
-    height: 115vh;
     h1 {
         padding: 5vh 0;
         text-align: center;

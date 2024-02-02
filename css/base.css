@@ -12,9 +12,9 @@ nav {
     z-index: 999;
 }
 
-main{
-    width: 100vw;
-    height: 101vh;
+body{
+    width: 100vw;  
+    height: 100vh;
 }
 
 .game__navbar {
@@ -234,6 +234,10 @@ main{
         }
 
     }
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: normal;
 }
 
 h1 {

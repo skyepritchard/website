@@ -3,14 +3,15 @@ main {
     background: var(--black);
     display: flex;
     justify-content: center;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     padding: 5%;
+    align-items: space-around;    
 }
 
 .services__card {
-    margin: 0 2rem;
-    height: 300px;
-    width: 300px;
+    margin: 2rem;
+    height: 20rem;
+    width: 20rem;
     border-radius: 4px;
     background-size: cover;
     color: var(--white);
@@ -19,6 +20,7 @@ main {
     flex-direction: column;
     justify-content: end;
     text-decoration: none;
+    
 }
 
 .services__card h4,
@@ -148,6 +150,6 @@ footer{
     background-color: var(--black);
     color: var(--white);
     position: relative;
-    margin-bottom: 0;
+    margin-bottom: 0px;
     margin-top:auto;
 }
