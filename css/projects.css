@@ -2,9 +2,13 @@
     display: flex;
 }
 
-main {
+.project_intro {
     flex-direction: row;
-    h1 {
+}
+
+main {
+    flex-direction: column;    
+    h1, h2 {
         padding: 10vh 0 5vh 0;
         text-align: center;
     }
@@ -36,5 +40,4 @@ main {
         padding: 5%;
         max-width: 33vw;
     }
-
 }

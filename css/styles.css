@@ -57,7 +57,7 @@ main {
         url('/images/fallingstar_icon_01.png');
 }
 
-.animation_reel {
+#animation_reel {
     background-image: var(--gradient),
         url('/images/reel_icon_01.png');
 }
