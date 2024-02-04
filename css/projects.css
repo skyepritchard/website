@@ -6,10 +6,25 @@
     flex-direction: row;
 }
 
+.subtitle {
+    text-align:center;
+    padding-bottom: 5vh;
+}
+
+.demigod_daycare__navbar {
+    background-image: var(--gradient),
+        url('/images/demigod_banner_01.png');
+}
+
+.gotta_gobot__navbar {
+    background-image: var(--gradient),
+        url('/images/banner_01.png');
+}
+
 main {
     flex-direction: column;    
     h1, h2 {
-        padding: 10vh 0 5vh 0;
+        padding: 10vh 0 1vh 0;
         text-align: center;
     }
 

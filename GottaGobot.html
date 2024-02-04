@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skye Pritchard</title>
     <link rel="stylesheet" href="/css/base.css">
-    
-<link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/projects.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
@@ -17,7 +16,7 @@
 <body>
     <!-- Navbar Section -->
     <header>
-        <nav>
+        <nav class = "gotta_gobot__navbar">
             <span class="navbar__container">
                 <div class="navbar__title">
                     <a href="/" id="navbar__logo">
@@ -57,46 +56,63 @@
     </header>
 
     <!-- Project Section -->
-    <div class="project">
-        <div class="project__container">
-            <div class="project__overview">
-                <div class="project__overview--title">
-                    <h1>Game title</h1>
-                    <p>Game genre + release date</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uQkBE9wMHmw"
+    <main class="flex">
+        <div class ="project_intro flex">
+            <figure style="margin-left:7.5vw;">
+                <img src="/images/placeholder.png">
+            </figure>
+
+            <section class="flex">
+                <h1>Gotta Go-Bot!</h1>
+                <p class = "subtitle">3D Platformer</p>
+
+                <iframe width="40vw" height="285vw" src="https://www.youtube.com/embed/uQkBE9wMHmw"
                         title="Gotta Go-Bot! Gameplay" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
-                    </iframe>
-                    <p><i>Game desc line 1</i></p>
-                    <p><i>Game desc line 2</i></p>
-                </div>
-                <div class="project__overview--stats">
-                    <p><b>Platform:</b> p</p>
-                    <p><b>Role:</b> r</p>
-                    <p><b>Team Size:</b> n</p>
-                    <p><b>Download demo:</b> <a href="/">l</a></p>
-                </div>
-            </div>
+                </iframe>
+
+                <span class="flex">
+                    <div>
+                        <p>Platform: PC (Windows)</p>
+                        <p>Role: Producer and Lead Artist</p>
+                        <p>Team Size: 7</p>
+                        <p>Development Time: 7 Weeks</p>
+                    </div>
+                    
+                    <div>
+                        <p>
+                            A small robot journeys to the heart of a giant humanoid contraption, seeking answers after waking up in the wilderness with no memories. Use your jump, dash, and grappling hook to get through the levels and avoid the creatures that have taken up residence.
+                        </p>
+
+                    </div>
+
+                    
+                </span>
+
+            </section>
+
+            <figure style="margin-right:7.5vw;">
+                <img src="/images/placeholder.png">
+            </figure>
         </div>
-    </div>
-    <div class="project__content">
-        <div class="project__content--container">
-            <div class="project__descriptions">
-                <h2>(Area) Contributions</h2>
-                <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                </ul>
-            </div>
-            <div class="project__images">
-                <p>Images will go here</p>
-            </div>
+        <div class ="project_buttons flex">
+            <section class = flex>
+                <h2>Contributions</h2>
+                <div>
+                    <p>This is where I describe what it is that I did for the project. I'm talking art, production, idk, im just filling the space here.</p>
+                </div>
+                <span class="flex">
+                    <div>
+                        <button class="button-50" role="button">Art Contributions</button>
+                    </div>
+                    <div>
+                        <button class="button-50" role="button">Production Contributions</button>
+                    </div>
+                </span>
+            </section>
         </div>
-    </div>
+    </main>
 
     <!-- Gallery -->
 

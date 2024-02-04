@@ -21,11 +21,6 @@ body{
     align-items: baseline;
 }
 
-.demigod_daycare__navbar {
-    background-image: var(--gradient),
-        url('/images/demigod_banner_01.png');
-}
-
 .navbar__container {
     display: flex;
     justify-content: space-between;
